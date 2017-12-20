@@ -1,0 +1,10 @@
+<launch> 
+ 
+      <!-- load urdf to Gazebo  -->  
+      <include file="$(find ur10_robotiq_gazebo)/launch/ur10_robotiq.launch" />     
+                        
+      <!-- moveit move group -->  
+      <include file="$(find ur10_robotiq_gazebo)/launch/moveit_planning_execution.launch" />      
+      
+</launch>  
+  

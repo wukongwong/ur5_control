@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>ur10_robotiq_description</name>
+  <version>1.1.1</version>
+  <description>
+      URDF description for Universal UR10 robot arms and robotiq
+  </description>
+
+  <author email="dqszfuyu@163.com">Y.Fu</author>
+  <maintainer email="dqszfuyu@163.com">Y.Fu</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/ur_description</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>kdl_parser</run_depend>
+
+
+  <export>
+  </export>
+</package>

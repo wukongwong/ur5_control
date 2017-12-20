@@ -1,0 +1,44 @@
+/:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Position Controllers ---------------------------------------
+  shoulder_pan_joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: shoulder_pan_joint
+
+ 
+  shoulder_lift_joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: shoulder_lift_joint
+
+  
+  elbow_joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: elbow_joint
+
+
+  wrist_1_joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: wrist_1_joint
+
+
+  wrist_2_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: wrist_2_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  wrist_3_joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: wrist_3_joint
+
+  robotiq_85_left_knuckle_joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: robotiq_85_left_knuckle_joint
+
+  robotiq_85_right_knuckle_joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: robotiq_85_right_knuckle_joint
+
+
